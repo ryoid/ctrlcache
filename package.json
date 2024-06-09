@@ -1,0 +1,59 @@
+{
+	"name": "ctrlcache",
+	"version": "0.0.0",
+	"description": "Manage and build HTTP Cache-Control headers",
+	"keywords": [
+		"ctrlcache",
+		"cachecontrol",
+		"typescript",
+		"cache-control",
+		"cache headers",
+		"cache control parser"
+	],
+	"license": "MIT",
+	"repository": "ryoid/ctrlcache",
+	"files": [
+		"dist"
+	],
+	"type": "module",
+	"sideEffects": false,
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.cts",
+	"exports": {
+		"require": {
+			"types": "./dist/index.d.cts",
+			"default": "./dist/index.cjs"
+		},
+		"import": {
+			"types": "./dist/index.d.mts",
+			"default": "./dist/index.mjs"
+		}
+	},
+	"imports": {
+		"#ctrlcache": {
+			"types": "./src/index.ts",
+			"development": "./src/index.ts",
+			"default": "./dist/index.mjs"
+		}
+	},
+	"scripts": {
+		"lint": "eslint --cache . && prettier -c src",
+		"lint:fix": "eslint --cache . --fix && prettier -w src",
+		"build": "pkgroll --minify --target node12.20",
+		"test": "vitest",
+		"dev": "tsx watch --conditions=development playground",
+		"type-check": "tsc --noEmit",
+		"prepack": "pnpm build && clean-pkg-json"
+	},
+	"devDependencies": {
+		"clean-pkg-json": "^1.2.0",
+		"eslint": "^9.4.0",
+		"eslint-config-unjs": "^0.3.2",
+		"pkgroll": "^2.0.2",
+		"prettier": "^3.3.1",
+		"tsx": "^4.15.0",
+		"typescript": "~5.2.2",
+		"vitest": "^1.6.0"
+	}
+}
