@@ -1,7 +1,8 @@
 <h1 align="center">
 	<sup>ctrlcache</sup>
 	<br>
-	<a href="https://www.npmjs.com/package/ctrlcache"><img src="https://badgen.net/npm/v/ctrlcache"></a>
+	<a href="https://www.npmjs.com/package/ctrlcache"><img src="https://badgen.net/npm/v/ctrlcache" title="NPM version"></a>
+  <a href="https://pkg-size.dev/ctrlcache"><img src="https://pkg-size.dev/badge/bundle/2067" title="Bundle size for ctrlcache"></a>
 </h1>
 
 Manage and build HTTP `Cache-Control` headers.
