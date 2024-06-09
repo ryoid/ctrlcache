@@ -9,9 +9,10 @@ Manage and build HTTP `Cache-Control` headers.
 
 ### Features
 
-- TypeScript, with TSDoc for [HTTP directives](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)
-- Create "presets" for reusable cache policies
+- TypeScript, with TSDoc for [directives](https://github.com/ryoid/ctrlcache/blob/main/src/settings.ts)
+- Create _presets_ for reusable cache policies
 - Parse `Cache-Control` headers from requests and extend them
+- Lightweight, with no dependencies
   <br>
 
 ## Install
